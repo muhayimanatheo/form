@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-500 p-6">
+    <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4">Registration Form</h1>
+        <form>
+            <div class="mb-4">
+                <label for="names" class="block text-gray-700 font-semibold mb-2">Student Names</label>
+                <input type="text" id="names" name="Names" required class="w-full px-3 py-2 border rounded-lg">
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-gray-700 font-semibold mb-2">Gender</label>
+                <div>
+                    <label class="mr-4">
+                        <input type="radio" name="Gender" value="Male" required class="mr-1"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="Gender" value="Female" required class="mr-1"> Female
+                    </label>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label for="ages" class="block text-gray-700 font-semibold mb-2">Ages</label>
+                <input type="number" id="ages" name="Ages" required class="w-full px-3 py-2 border rounded-lg">
+            </div>
+            
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 font-semibold mb-2">Enter Password</label>
+                <input type="password" id="password" name="Password" required class="w-full px-3 py-2 border rounded-lg">
+            </div>
+            
+            <div class="mb-4">
+                <label for="confirm-password" class="block text-gray-700 font-semibold mb-2">Confirm Password</label>
+                <input type="password" id="confirm-password" name="ConfirmPassword" required class="w-full px-3 py-2 border rounded-lg">
+            </div>
+            
+            <div>
+                <input type="submit" value="Send" class="w-full bg-blue-500 text-white py-2 rounded-lg cursor-pointer hover:bg-blue-600">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
